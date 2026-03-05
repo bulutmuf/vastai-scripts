@@ -15,16 +15,9 @@ MODEL_LOG="${MODEL_LOG:-/var/log/portal/comfyui.log}"
 
 # Model declarations: "URL|OUTPUT_PATH"
 HF_MODELS=(
-    # Diffusion model (distilled)
-    "https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/diffusion_models/flux-2-klein-4b.safetensors|${MODELS_DIR}/diffusion_models/flux-2-klein-4b.safetensors"
-
-    # Diffusion model (base)
-    "https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/diffusion_models/flux-2-klein-base-4b.safetensors|${MODELS_DIR}/diffusion_models/flux-2-klein-base-4b.safetensors"
-
-    # Text encoder Qwen3 4B
-    "https://huggingface.co/Comfy-Org/flux2-klein-4B/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors|${MODELS_DIR}/text_encoders/qwen_3_4b.safetensors"
-
-    # VAE
+    "https://huggingface.co/Comfy-Org/flux2-klein/resolve/main/split_files/diffusion_models/flux-2-klein-4b-fp8.safetensors|${MODELS_DIR}/diffusion_models/flux-2-klein-4b-fp8.safetensors"
+    "https://huggingface.co/Comfy-Org/flux2-klein/resolve/main/split_files/diffusion_models/flux-2-klein-base-4b-fp8.safetensors|${MODELS_DIR}/diffusion_models/flux-2-klein-base-4b-fp8.safetensors"
+    "https://huggingface.co/Comfy-Org/flux2-klein/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors|${MODELS_DIR}/text_encoders/qwen_3_4b.safetensors"
     "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors|${MODELS_DIR}/vae/flux2-vae.safetensors"
 )
 # Wget declarations: "URL|OUTPUT_PATH"
